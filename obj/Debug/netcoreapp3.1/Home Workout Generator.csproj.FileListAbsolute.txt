@@ -1,0 +1,20 @@
+C:\Users\Nlara\source\repos\Home Workout Generator\bin\Debug\netcoreapp3.1\Home Workout Generator.exe
+C:\Users\Nlara\source\repos\Home Workout Generator\bin\Debug\netcoreapp3.1\Home Workout Generator.deps.json
+C:\Users\Nlara\source\repos\Home Workout Generator\bin\Debug\netcoreapp3.1\Home Workout Generator.runtimeconfig.json
+C:\Users\Nlara\source\repos\Home Workout Generator\bin\Debug\netcoreapp3.1\Home Workout Generator.runtimeconfig.dev.json
+C:\Users\Nlara\source\repos\Home Workout Generator\bin\Debug\netcoreapp3.1\Home Workout Generator.dll
+C:\Users\Nlara\source\repos\Home Workout Generator\bin\Debug\netcoreapp3.1\Home Workout Generator.pdb
+C:\Users\Nlara\source\repos\Home Workout Generator\obj\Debug\netcoreapp3.1\Home Workout Generator.AssemblyInfoInputs.cache
+C:\Users\Nlara\source\repos\Home Workout Generator\obj\Debug\netcoreapp3.1\Home Workout Generator.AssemblyInfo.cs
+C:\Users\Nlara\source\repos\Home Workout Generator\obj\Debug\netcoreapp3.1\Home Workout Generator.csproj.CoreCompileInputs.cache
+C:\Users\Nlara\source\repos\Home Workout Generator\obj\Debug\netcoreapp3.1\Home Workout Generator.dll
+C:\Users\Nlara\source\repos\Home Workout Generator\obj\Debug\netcoreapp3.1\Home Workout Generator.pdb
+C:\Users\Nlara\source\repos\Home Workout Generator\obj\Debug\netcoreapp3.1\Home Workout Generator.genruntimeconfig.cache
+C:\Users\Nlara\source\repos\Home Workout Generator\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Nlara\source\repos\Home Workout Generator\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Nlara\source\repos\Home Workout Generator\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Nlara\source\repos\Home Workout Generator\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Nlara\source\repos\Home Workout Generator\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Nlara\source\repos\Home Workout Generator\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Nlara\source\repos\Home Workout Generator\obj\Debug\netcoreapp3.1\Home Workout Generator.csproj.CopyComplete
+C:\Users\Nlara\source\repos\Home Workout Generator\obj\Debug\netcoreapp3.1\Home Workout Generator.csproj.AssemblyReference.cache
