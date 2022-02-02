@@ -21,32 +21,33 @@ namespace Home_Workout_Generator
         static void Main(string[] args)
         {
             Start_Display();
+            
+
+
+            //DisplayWorkout(database_connection.Generate_Workout(2));
+
+
+
+
         }
 
 
-        #region USER INPUT
-        public static void Start_Display()
+        public static void DisplayExercise(Exercise e)
         {
-            Console.Clear();
-            Console.WriteLine("Welcome to the home fitness workout generator created by Nicholas La Raffa!");
-            Console.WriteLine("Generate A Full Body Workout (No Gym Required!)\n");
-
-            Console.WriteLine("Choose A Difficulty:\n");
-            Console.WriteLine("Beginner (1)");
-            Console.WriteLine("Intermediate (2)");
-            Console.WriteLine("Advanced (3)");
-            Console.WriteLine("Elite (4)");
-
-            Select_Difficulty(Console.ReadLine());
+            Console.WriteLine(e.base_name + " " + (int)e.base_duration + " seconds" + " " + e.base_repsgoal + " reps" + " " + (Exercise.workoutLevel)e.base_workoutlevel + " difficulty" + " " + (Exercise.muscleGroup)e.muscle + " muscle group");
+            /*
+            Console.WriteLine(e.base_name);
+            Console.WriteLine((int)e.base_duration + " seconds");
+            Console.WriteLine(e.base_repsgoal + " reps");
+            Console.WriteLine((Exercise.workoutLevel)e.base_workoutlevel + " difficulty");
+            Console.WriteLine((Exercise.muscleGroup)e.muscle + " muscle group");
+            */
         }
-
-        public static void Select_Difficulty(string value)
+        public static void DisplayRound(Round r)
         {
-            Console.Clear();
-            int int_val = -1;
-            try
+            foreach (Exercise e in r.exercises)
             {
-                int_val = int.Parse(value);
+                DisplayExercise(e);
             }
             catch
             {
@@ -55,21 +56,36 @@ namespace Home_Workout_Generator
                 Start_Display();
             }
 
-            if (int_val > 0 && int_val < 5)
-            {
-                Console.WriteLine("Your difficulty is:\n" + (WorkoutLevel)int_val);
-                Console.WriteLine("Press Enter to start..."); 
-                Console.ReadKey();
-                DisplayWorkout(database_connection.Generate_Workout(int_val));
-            }
-            else
-            {
-                Console.WriteLine("Please input a valid difficulty.");
-                Console.ReadKey();
-                Start_Display();
-            }
+    public class Workout{
+
+        public Exercise.workoutLevel workoutlevel = Exercise.workoutLevel.Beginner;//Limits difficulty of exercises
+                                                                 //(Controls how many exercises per circuit, speed/tempo of exercises, duration of exercises, exercise complexity) 
+        public int roundcount = 4; //How many exercise round groups?
+        public int circuits = 2;//How many circuits will this entire workout consist of? (All rounds)
+
+        public Round[] rounds;
+
+        public Workout(int level)
+        {
+            workoutlevel = (Exercise.workoutLevel)level;
+            roundcount = (int)(2 * ((level > 1) ? 2 : 1.5f));//3,4,6,8
+            circuits = 3 + level;
+
+            rounds = new Round[roundcount];
+
+            for (int i = 0; i < roundcount; i++)
+                rounds[i] = new Round((int)workoutlevel);
         }
-        #endregion
+
+
+        public static Workout GenerateWorkout(int level)
+        {
+            Workout workout = new Workout(level);
+
+            return workout;
+        }
+
+   }
 
         #region DISPLAY DATA
         //DISPLAY FUNCTIONS
